@@ -1,9 +1,11 @@
-vimg = "";
+var img = "";
+function preload() {
+    img = loadImage("vehicles.png");
+}
 function setup() {
     canvas = createCanvas(500, 400);
     canvas.center();
-    vimg = loadImage("vehicles.png");
 }
 function draw() {
-    image(vimg, 0, 0, 500, 400);
+    image(img, 0, 0, 500, 400);
 }
